@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmação dos Dados - Lucas Paredes Braga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+  <header class="topo">
+    <h1>Confirme seus dados para verificar se está tudo certo!</h1>
+  </header>
+
+  <main class="centro">
+    <div class="card">
+      <p><strong>Nome:</strong> <span id="confNome"></span></p>
+      <p><strong>Sobrenome:</strong> <span id="confSobrenome"></span></p>
+      <p><strong>Email:</strong> <span id="confEmail"></span></p>
+      <p><strong>Idade:</strong> <span id="confIdade"></span></p>
+
+      <div class="botoes">
+        <button class="btn" onclick="baixarDados()">Confirmar</button>
+        <button class="btn btn2" onclick="voltarEdicao()">Editar</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>carregarDadosConfirmacao();</script>
+</body>
+</html>
